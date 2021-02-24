@@ -29,6 +29,7 @@ class ReactFreezeframe extends Component<Props, State> {
   }
 
   componentDidMount() {
+    console.log("look ma, i made a change to an npm library")
     if (this.freeze.current === null) {
       throw new ReferenceError('You must provide a valid ref')
     }
